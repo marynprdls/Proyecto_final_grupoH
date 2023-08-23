@@ -193,7 +193,7 @@ input{
     border:2px solid #0404da;
 }
 input:focus{
-    border:2px solid #8989f7;
+    border:2px solid #928907;
 }
 .pform:before{
     content:attr(type);
@@ -213,7 +213,7 @@ input:focus{
     transition:all .3s;
 }
 .msjboton:hover{
-    background:#8989f7;
+    background:#49b6f5;
     color:#0404da;
 }
 
