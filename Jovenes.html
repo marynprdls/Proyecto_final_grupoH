@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CiberSeguridad.Org</title>
+    <link rel="shortcut icon" href="imagenes/logo.jpg">
+    <!-- formato general -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=Tektur&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Laila&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!-- formato para pantallas pequeñas, icono menu desplegable vertical -->
+        <div class="d-lg-none">
+            <img src="imagenes/ciberseguridad1.jpg" class="img-fluid opacity-75" alt="imgciber">
+            <nav class="navbar bg-transparent fixed-top">
+                <div class="container-fluid">  
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        
+                        <div class="offcanvas-header">
+                            <img src="imagenes/logo.jpg" alt="Logo" width="45" height="40" class="d-inline align-text-top">
+                            <h5 class="offcanvas-title d-inline align-text-top text-center titulopag" id="offcanvasNavbarLabel">CiberSeguridad para Tod#s</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="#qh">Sobre Nosotros</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Novedades</a>
+                                </li>
+                                
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#"data-bs-toggle="dropdown">Contenido</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="Adultos.html">Adultos</a></li>
+                                        <li><a class="dropdown-item" href="Jovenes.html">Jóvenes</a></li>
+                                        <li><a class="dropdown-item" href="Niños.html">Niños</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="AulaVirtual.html">Aula Virtual</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Enlaces</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="https://program.ar/">Program.Ar</a></li>
+                                        <li><a class="dropdown-item" href="https://www.argentinacibersegura.org/">ArgentinaCibersegura</a></li>
+                                        <li><a class="dropdown-item" href="https://www.commonsense.org/education/digital-citizenship">Common Sense</a></li>
+                                    </ul>
+                                </li>
+                                    
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contacto">Contacto</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex mt-3" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                </div> 
+            </nav>
+        </div>
+        
+          <!-- encondido para pantallas menores a large -->
+        <div class="d-none d-lg-block">
+            <img src="imagenes/ciberseguridad1.jpg" class="card-img-top opacity-75" alt="imgciber">
+            
+            <nav class="nav fixed-top bg-info-subtle opacity-75 justify-content-center">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#qh">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Novedades</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Contenido</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Adultos.html">Adultos</a></li>
+                            <li><a class="dropdown-item" href="Jovenes.html">Jóvenes</a></li>
+                            <li><a class="dropdown-item" href="Niños.html">Niños</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="AulaVirtual.html">Aula Virtual</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Enlaces</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://program.ar/">Program.Ar</a></li>
+                            <li><a class="dropdown-item" href="https://www.argentinacibersegura.org/">ArgentinaCibersegura</a></li>
+                            <li><a class="dropdown-item" href="https://www.commonsense.org/education/digital-citizenship">Common Sense</a></li>
+                        </ul>
+                    </li>
+                        
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>                 
+            </nav>
+                                  
+        </div>
+          <!-- encondido para pantallas menores a large -->
+    </header>
+    <main>
+        <p class="gio4">
+            Las características actuales de Internet permiten que los más jóvenes también puedan aprovechar los beneficios de la Red para estudiar, divertirse, crear o sociabilizar. Es indiscutible que el entorno online de los menores forma parte de su desarrollo.
+             </p>
+        <h1 id="bienvenida">Guía práctica para jovenes de 13 a 18 años</h1>
+            <h2 class="gio2">¿Cómo protegerte en Internet?</h2>
+
+            <h2 class="gio2">¿Cuáles son los riesgos de Internet?</h2>
+
+             <p class="gio4">El uso de Internet puede llevarte muchos tipos de peligros. A continuación aprenderemos de algunas amenzas o situaciones que debes conocer:
+             </p>
+        
+            <h3 class="gio7">Ciberacoso</h3>
+            <p class="gio4">
+                Cuando alguien nos molesta, nos insulta o nos amenaza por Internet, redes sociales, etc. Se aprovechan del anonimato de Internet.
+            </p>
+            <h3 class="gio7">Robo de Información</h3>
+            <p class="gio4">
+                Cuando una persona consigue nuestra información personal, fotos, dirección e incluso datos de cuentas bancarias, tarjetas de créditos de manera ilegal. 
+            </p>
+            <h3 class="gio7">Suplantación de Identidad</h3>
+                <p class="gio4">
+                    Creación de cuenta falsa, páginas web que se hacen pasar por nosotros.
+                </p>
+            <h3 class="gio7">Ciberviolencia</h3>
+                <p class="gio4">
+                    Es la violencia que se ejerce por Internet. Como el cibercontrol, que se realiza cuando nos exigen que les brindemos nuestras contraseñas, ubicación en tiempo real o leer nuestras conversaciones por WhatsApp.
+                </p>
+            <h3 class="gio7">Noticias Falsas (fake new)</h3>
+                <p class="gio4">
+                    Información falsa que encontramos en Internet, que tiene como objetivo enagañarnos para manipularno
+                </p>
+            <h3 class="gio7">Virus o Malware</h3>
+                <p class="gio4">
+                    Programas malintencionados que descargamos en nuestros equipos, que al hacer clic en algún enlace o archivo fraudulento.
+                </p>
+            <h3 class="gio7">Adicciones Digitales</h3>
+                <p class="gio4">
+                    Cuando pasamos demasiado tiempo con nuestros dispositivos, consumiendo contenido o jagando hasta el punto de desatender nuestra vida real (amistades, estudios, etc)
+                </p>
+           <h3 class="gio7">Sextorsión</h3>
+                <p class="gio4"> 
+                    Cuando nos amenazan con publicar imágenes íntimas que hemos compartido con alguna persona (sexting) que ahora nos traiciona.
+                </p>
+          <h3 class="gio7">Desafíos peligrosos</h3>
+                <p class="gio4">
+                    Retos que se ponen de moda especialmente entre adolescentes que pueden causar daños físicos o incluso la muerte.
+                </p>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
+

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CiberSeguridad.Org</title>
+    <link rel="shortcut icon" href="imagenes/logo.jpg">
+    <!-- formato general -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=Tektur&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Laila&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!-- formato para pantallas pequeñas, icono menu desplegable vertical -->
+        <div class="d-lg-none">
+            <img src="imagenes/ciberseguridad1.jpg" class="img-fluid opacity-75" alt="imgciber">
+            <nav class="navbar bg-transparent fixed-top">
+                <div class="container-fluid">  
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        
+                        <div class="offcanvas-header">
+                            <img src="imagenes/logo.jpg" alt="Logo" width="45" height="40" class="d-inline align-text-top">
+                            <h5 class="offcanvas-title d-inline align-text-top text-center titulopag" id="offcanvasNavbarLabel">CiberSeguridad para Tod#s</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="#qh">Sobre Nosotros</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Novedades</a>
+                                </li>
+                                
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#"data-bs-toggle="dropdown">Contenido</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="Adultos.html">Adultos</a></li>
+                                        <li><a class="dropdown-item" href="Jovenes.html">Jóvenes</a></li>
+                                        <li><a class="dropdown-item" href="Niños.html">Niños</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="AulaVirtual.html">Aula Virtual</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Enlaces</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="https://program.ar/">Program.Ar</a></li>
+                                        <li><a class="dropdown-item" href="https://www.argentinacibersegura.org/">ArgentinaCibersegura</a></li>
+                                        <li><a class="dropdown-item" href="https://www.commonsense.org/education/digital-citizenship">Common Sense</a></li>
+                                    </ul>
+                                </li>
+                                    
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contacto">Contacto</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex mt-3" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                </div> 
+            </nav>
+        </div>
+        
+          <!-- encondido para pantallas menores a large -->
+        <div class="d-none d-lg-block">
+            <img src="imagenes/ciberseguridad1.jpg" class="card-img-top opacity-75" alt="imgciber">
+            
+            <nav class="nav fixed-top bg-info-subtle opacity-75 justify-content-center">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#qh">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Novedades</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Contenido</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Adultos.html">Adultos</a></li>
+                            <li><a class="dropdown-item" href="Jovenes.html">Jóvenes</a></li>
+                            <li><a class="dropdown-item" href="Niños.html">Niños</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="AulaVirtual.html">Aula Virtual</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Enlaces</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://program.ar/">Program.Ar</a></li>
+                            <li><a class="dropdown-item" href="https://www.argentinacibersegura.org/">ArgentinaCibersegura</a></li>
+                            <li><a class="dropdown-item" href="https://www.commonsense.org/education/digital-citizenship">Common Sense</a></li>
+                        </ul>
+                    </li>
+                        
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>                 
+            </nav>
+                                  
+        </div>
+          <!-- encondido para pantallas menores a large -->
+    </header>
+    <main>
+        <div class="contenedor-contenido">
+            <div>
+                <img src="imagenes/padres seg sin fondo.png" class="img">
+            </div>
+            <div class="texto1">
+                <p class="parrafo1">La protección de tus computadoras y    dispositivos digitales no debería quedar en
+                    manos de tus niños. El diálogo abierto y los pasos proactivos son imprescindibles
+                    para crear un entorno informático más seguro en el hogar. 
+                    </p>
+                <p class="parrafo2">Tan pronto como tus niños comienzan a explorar Internet, necesitarás establecer reglas claras sobre cuándo y cómo pueden usarla. Explica los riesgos: por qué es importante tener reglas
+                familiares para evitar problemas y hacer que internet sea divertida para todos.</p>
+            </div>
+        </div>
+        <div class="texto2">
+            <h2>¿Como podemos iniciar?</h2>
+            <h3>Mantén la confidencialidad de
+                la información personal </h3>
+            <p class="texto2">Enséñales a tus hijos a preguntarse antes
+                de compartir información personal online
+                y a que sólo lo hagan cuando tengan tu
+                permiso.La información personal incluye
+                hechos, como el nombre real de los niños,
+                edad, género, número telefónico, dirección, escuela, equipo de deportes y lugares
+                favoritos para ir a jugar. También incluye
+                fotografías y sentimientos. Los delincuentes informáticos buscan expresiones de tristeza, soledad o enojo. Y
+                saben cómo utilizar información sin conexión aparente para ubicar personas. 
+                </p>
+            <h4>Aqui van algunos tips:</h4>
+            <p class="texto2">Usa software y herramientas de
+                seguridad para el grupo familiar. 
+                </p>
+            <p class="texto2">Protege tu equipo y tus
+                dispositivos móviles. </p>
+            <p class="texto2">Mantén al día el software
+                antivirus y antispyware. </p>
+            <p class="texto2">Usa un firewall de internet
+                en forma constante.
+                </p>
+            <p class="texto2">Mantén al día el software
+                antivirus y antispyware.</p>
+        </div>
+        <button class="sticky-button" >
+            <img src="imagenes/flecha sin fondo.png" alt="Imagen" class="imagensticky">
+          </button>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
