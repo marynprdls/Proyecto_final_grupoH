@@ -232,12 +232,18 @@ input:focus{
     color: #f15a1e;
     animation:parpadeo 2s infinite;
 }
-.piedepag{
+.advicend{
     margin: 1px;
     border: solid 1px #bbd9e55c;
     padding: 1px;
     display: flex;
     flex-direction: column;
+    background-color: #63adf3;
+}
+.piedepag{
+    margin: 1px;
+    border: solid 1px #bbd9e55c;
+    padding: 1px;
     background-color: #63adf3;
 }
 /*fin formato páginas*/
