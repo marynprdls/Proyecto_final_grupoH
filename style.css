@@ -33,11 +33,9 @@ a:hover{
 
 .presentación{
     margin: 1px;
-    border: solid 1px #bbd9e55c;
     padding: 1px;
     display: flex;
     flex-direction: column;
-    background-color: #b4d7ebc7;
 }
 
 .question{
@@ -54,7 +52,6 @@ a:hover{
     padding: 1px;
     text-align: center;
     font-style: italic;
-    font-weight: normal;
     font-size: 20px;
     color: #162174;
 }
@@ -63,6 +60,7 @@ a:hover{
     margin: 1px;
     padding: 2px;
     height:fit-content;
+    background-color: #0404da;
 }
 
 #advertencia{
@@ -71,13 +69,18 @@ a:hover{
     margin: 1px;
     padding: 2px;
     font-size: 30px;
+    font-weight: bold;
     letter-spacing: 3px;
     font-weight: bold;
+    animation:parpadeo 2s infinite;
+    
 }
+
 
 #advertencia:hover{
     background-color: rgb(199, 237, 241);
 }
+
 
 .contenidos{
     background-color: #cdeaebf0;
@@ -121,6 +124,7 @@ h2.advice{
     padding: 2px;
     font-weight: bold;
 }
+
 .videoinfo{
     margin: 2px;
     padding: 1px;
@@ -167,7 +171,8 @@ h2.advice{
     width:180px;
     color:#0404da;
     text-align: center;
-    /* animation:parpadeo 2s infinite;llama funcion parpadeo cada 2 segundos, en bucle infinito */
+    animation:parpadeo 2s infinite;
+    /*llama funcion parpadeo cada 2 segundos, en bucle infinito */
 }
 /* funcion que cambia variable transparencia */
 @keyframes parpadeo {
@@ -218,5 +223,21 @@ input:focus{
     background:#49b6f5;
     color:#0404da;
 }
-
+.play{
+    margin: 1px;
+    padding: 1px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: #f15a1e;
+    animation:parpadeo 2s infinite;
+}
+.piedepag{
+    margin: 1px;
+    border: solid 1px #bbd9e55c;
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+    background-color: #63adf3;
+}
 /*fin formato páginas*/
