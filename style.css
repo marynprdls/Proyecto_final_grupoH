@@ -146,22 +146,9 @@ h2.advice{
 .imgvalor{
     margin: 2px;
     padding: 1px;
-    animation:parpadeo 2s infinite;
     justify-content:center;
     text-align: center;
 }
-@keyframes parpadeo {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-}
-
 .form{
     width:340px;
     height:440px;
@@ -180,7 +167,22 @@ h2.advice{
     width:180px;
     color:#0404da;
     text-align: center;
+    /* animation:parpadeo 2s infinite;llama funcion parpadeo cada 2 segundos, en bucle infinito */
 }
+/* funcion que cambia variable transparencia */
+@keyframes parpadeo {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+
 input{
     width:100%;
     padding:10px;
