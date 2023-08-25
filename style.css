@@ -244,6 +244,11 @@ input:focus{
     margin: 1px;
     border: solid 1px #bbd9e55c;
     padding: 1px;
-    background-color: #63adf3;
+    background-color: #a1cdf7;
 }
+.dire{
+    list-style: none;
+    font-weight: bold;
+    font-size: 20px;
+ }
 /*fin formato páginas*/
