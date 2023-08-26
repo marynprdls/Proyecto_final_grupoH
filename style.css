@@ -150,8 +150,10 @@ h2.advice{
 .imgvalor{
     margin: 2px;
     padding: 1px;
+    display: flex;
     justify-content:center;
     text-align: center;
+    height: 400px;
 }
 .form{
     width:340px;
