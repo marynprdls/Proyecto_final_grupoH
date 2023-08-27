@@ -259,7 +259,14 @@ input:focus{
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) { 
-
+    .imgvalor{
+        margin:calc(50vh - 220px) auto;
+        padding: 1px;
+        display: flex;
+        justify-content:center;
+        text-align: center;
+        height: 400px;
+    }
 }
 
 /* Large devices (desktops, 992px and up)*/
