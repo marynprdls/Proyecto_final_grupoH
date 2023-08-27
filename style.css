@@ -31,6 +31,29 @@ a:hover{
 
 /*inicio formato páginas*/
 
+.presentini{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.questini{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    font-weight: bold;
+    color:black;
+}
+
+.imgciber{
+    margin: 1px;
+    padding: 1px;
+    height: 200px;
+    opacity: 75%;
+}
+
 .presentación{
     margin: 1px;
     padding: 1px;
@@ -48,12 +71,13 @@ a:hover{
     font-weight: bold;
 }
 .subquestion{
-    margin: 1px;
+    margin: 5px;
     padding: 1px;
     text-align: center;
     font-style: italic;
     font-size: 20px;
     color: #162174;
+    font-weight: bolder;
 }
 
 #carouselIndicators{
@@ -66,7 +90,7 @@ a:hover{
 #advertencia{
     color: #b5042c;
     text-align: center;
-    margin: 1px;
+    margin: 5px;
     padding: 2px;
     font-size: 30px;
     font-weight: bold;
@@ -78,7 +102,7 @@ a:hover{
 
 
 #advertencia:hover{
-    background-color: rgb(199, 237, 241);
+    background-color: rgb(65, 224, 241);
 }
 
 
@@ -259,6 +283,7 @@ input:focus{
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) { 
+    
     .imgvalor{
         margin:calc(50vh - 220px) auto;
         padding: 1px;
@@ -267,19 +292,76 @@ input:focus{
         text-align: center;
         height: 400px;
     }
+    .imgciber{
+        height: 250px;
+       }
+    .questini{
+        font-size: 30px;
+    }
+    .subquestion{
+        font-size: 25px;
+    }
 }
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) { 
-
+   .imgciber{
+    height: 400px;
+   }
+   .questini{
+    font-size: 50px;
+    }
+    .subquestion{
+        font-size: 25px;
+    }
+    .imgvalor{
+        margin:calc(50vh - 220px) auto;
+        padding: 1px;
+        display: flex;
+        justify-content:center;
+        text-align: center;
+        height: 600px;
+    }
 }
 
 /* X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) { 
-
+    .imgciber{
+        height: 400px;
+       }
+       .questini{
+        font-size: 70px;
+    }
+    .subquestion{
+        font-size: 30px;
+    }
+    .imgvalor{
+        margin:calc(50vh - 220px) auto;
+        padding: 1px;
+        display: flex;
+        justify-content:center;
+        text-align: center;
+        height: 600px;
+    }
  }
 
 /* XX-Large devices (larger desktops, 1400px and up)*/
 @media (min-width: 1400px) { 
-    
+    .imgciber{
+        height: 400px;
+       }
+       .questini{
+        font-size: 70px;
+    }
+    .subquestion{
+        font-size: 30px;
+    }
+    .imgvalor{
+        margin:calc(50vh - 220px) auto;
+        padding: 1px;
+        display: flex;
+        justify-content:center;
+        text-align: center;
+        height: 800px;
+    }
 }
