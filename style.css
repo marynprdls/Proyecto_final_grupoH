@@ -270,12 +270,13 @@ input:focus{
     margin: 1px;
     border: solid 1px #bbd9e55c;
     padding: 1px;
-    background-color: #a1cdf7;
+    background-image:url(imagenes/ciberseguridad1.jpg);
 }
 .dire{
     list-style: none;
     font-weight: bold;
     font-size: 20px;
+    color:white;
  }
 /*fin formato páginas*/
 
