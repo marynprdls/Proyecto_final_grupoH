@@ -272,11 +272,21 @@ input:focus{
     padding: 1px;
     background-image:url(imagenes/ciberseguridad1.jpg);
 }
+.footercontenido{
+    opacity: 75%;
+}
+.icon-link{
+    color: white;
+}
+.icon-link:hover{
+    color: #162174;
+}
 .dire{
     list-style: none;
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 20px;
     color:white;
+    text-decoration: underline;
  }
 /*fin formato páginas*/
 
