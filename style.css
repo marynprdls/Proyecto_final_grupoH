@@ -234,7 +234,7 @@ input:focus{
 .msjboton{
     float:left;
     padding:8px 12px;
-    margin:8px 0 0;
+    margin:40px 10px 20px 70px;
     border:2px solid #0404da;
     background:0;
     color:#0404da;
@@ -305,9 +305,23 @@ input:focus{
     background-position: center;
 
 }
+.tituloacce{
+    margin: 10px;
+    margin-top: 50px;
+    padding: 5px;
+}
+.invitacce{
+    margin: 5px;
+    padding: 3px;
+    color: #0404da;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
 .formingusu{
     width:340px;
-    height:500px;
+    height:480px;
     background:#b7d2ec;
     border-radius:8px;
     box-shadow:0 0 40px -10px #244af0;
@@ -380,6 +394,18 @@ input:focus{
         display: flex;
         flex-direction: row;
     }
+    .tituloacce{
+        margin-top: 50px;
+    }
+    .invitacce{
+        font-size: 30px;
+    }
+    .formingusu{
+        margin:calc(50vh - 300px) auto;
+    }
+    .msjboton{
+        margin:40px 10px 20px 70px;
+    }
 }
 
 /* Large devices (desktops, 992px and up)*/
@@ -404,6 +430,18 @@ input:focus{
     #contacto{
         display: flex;
         flex-direction: row;
+    }
+    .tituloacce{
+        margin-top: 50px;
+    }
+    .invitacce{
+        font-size: 40px;
+    }
+    .formingusu{
+        margin:calc(50vh - 320px) auto;
+    }
+    .msjboton{
+        margin:40px 10px 20px 70px;
     }
 }
 
@@ -430,6 +468,18 @@ input:focus{
         display: flex;
         flex-direction: row;
     }
+    .tituloacce{
+        margin-top: 50px;
+    }
+    .invitacce{
+        font-size: 50px;
+    }
+    .formingusu{
+        margin:calc(50vh - 300px) auto;
+    }
+    .msjboton{
+        margin:40px 10px 20px 70px;
+    }
  }
 
 /* XX-Large devices (larger desktops, 1400px and up)*/
@@ -454,5 +504,17 @@ input:focus{
     #contacto{
         display: flex;
         flex-direction: row;
+    }
+    .tituloacce{
+        margin-top: 50px;
+    }
+    .invitacce{
+        font-size: 50px;
+    }
+    .formingusu{
+        margin:calc(50vh - 300px) auto;
+    }
+    .msjboton{
+        margin:40px 10px 20px 70px;
     }
 }
