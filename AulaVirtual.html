@@ -125,20 +125,34 @@
       <!-- encondido para pantallas menores a large -->
     </header>
     <main>
-        <div class="registro"> 
+        <div> 
             <h2> Accedé a más contenido...</h2>
-            <form action="">
-                <input type="text" id="usuario" size="20" name="usuario" value="Usuario"/>
-                <input type="password" id="clave" name="clave" size="20" value="Contraseña"/>
-                <div id="recuerda"><input type="checkbox" name="rememberusername" id="rememberusername" value="">
-                <label for="rememberusername">Recordar nombre de usuario</label></div>
-            </form>
         </div>
         
-        
+        <section id="contacto">
+            <form class="formingusu">
+                <h2 class="questformusu">Ingreso Aula Virtual</h2>
+                <p class="pform" type="Nombre de usuario:">
+                    <input type="text" id="usuario" placeholder="usuario/correo electrónico" name="usuario" ></input>
+                </p>
+                <p class="pform" type="Contraseña:">
+                    <input type="password" id="clave" name="clave" placeholder="Escribe tu contraseña"></input>
+                </p>
+                <div id="recuerda"><input type="checkbox" name="rememberusername" id="rememberusername">
+                    <label for="rememberusername">Recordar nombre de usuario</label>
+                </div>
+                <button class="msjboton">Acceder</button>
+            </form>
+
+            <div class="formingusu">
+                <h2 class="questformusu">Registrarse como usuario</h2>
+                <p>Para acceder al aula virtual, debe crear una cuenta.</p>
+                <button class="msjboton">Crear cuenta</button>
+            </div>
+        </section>
     </main>
     <footer class="piedepag conteiner text-center">
-        <div class="row align-items-center">
+        <div class="row align-items-center footercontenido">
             <div class="col">
                 <ul style="list-style: none;">
                     <li>

@@ -51,7 +51,7 @@ a:hover{
     margin: 1px;
     padding: 1px;
     height: 200px;
-    opacity: 75%;
+    opacity: 50%;
 }
 
 .presentación{
@@ -99,13 +99,9 @@ a:hover{
     animation:parpadeo 2s infinite;
     
 }
-
-
 #advertencia:hover{
     background-color: rgb(65, 224, 241);
 }
-
-
 .contenidos{
     background-color: #cdeaebf0;
     margin: 5px;
@@ -181,7 +177,7 @@ h2.advice{
 }
 .form{
     width:340px;
-    height:440px;
+    height:500px;
     background:#63adf3;
     border-radius:8px;
     box-shadow:0 0 40px -10px #244af0;
@@ -226,13 +222,13 @@ input{
     border:2px solid #0404da;
 }
 input:focus{
-    border:2px solid #928907;
+    border:2px solid #020c1b;
 }
 .pform:before{
     content:attr(type);
     display:block;
     margin:28px 0 0;
-    font-size:14px;
+    font-size:20px;
     color:#0404da;
 }
 .msjboton{
@@ -308,6 +304,31 @@ input:focus{
     border-radius: 50%;
     background-position: center;
 
+}
+.formingusu{
+    width:340px;
+    height:500px;
+    background:#b7d2ec;
+    border-radius:8px;
+    box-shadow:0 0 40px -10px #244af0;
+    margin:calc(50vh - 220px) auto;
+    padding:20px 30px;
+    max-width:calc(100vw - 40px);
+    box-sizing:border-box;
+    position:relative;
+}
+.questformusu{
+    margin:5px 0;
+    padding-bottom:10px;
+    width:50px;
+    color:#07076b;
+    text-align: start;
+}
+#recuerda{
+    display: inline;
+}
+#contacto{
+    display: flex;
 }
 /*fin formato páginas*/
 
