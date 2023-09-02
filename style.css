@@ -160,7 +160,7 @@ h2.advice{
     font-size: 15px; 
     font-weight: bold;   
 }
-#items{
+.items{
     margin: 5px;
     padding-left: 60px;
     font-style: italic;
