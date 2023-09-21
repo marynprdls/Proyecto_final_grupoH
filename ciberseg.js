@@ -10,13 +10,13 @@
 //     return 'Hola, ' + nombre + ' ' + apellido + '!';
 // }
 
-let nomusuario=prompt("Ingresar nombre de usuario:");
-let apeusuario=prompt("Ingrese apellido:");
+let nomusuario=prompt("Ingresar su nombre:");
+let apeusuario=prompt("Ingrese su apellido:");
 
 if ( nomusuario == ""){
-    alert("No ingresaste nombre de usuario");
+    alert("No ingresaste nombre de usuario correctamente" );
 } else {
-    alert("usuario ingresado"+ nomusuario);
+    alert(" El usuario ingresado es" + " "+ nomusuario);
 }
 
 let saludar = (nombre, apellido) => 'Hola, ' + nombre + ' ' +  apellido + '!';
