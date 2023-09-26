@@ -42,7 +42,7 @@
                                 <a class="nav-link" href="#qh">Sobre Nosotros</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Novedades</a>
+                                    <a class="nav-link" href="#Novedades">Novedades</a>
                                 </li>
                                 
                                 <li class="nav-item dropdown">
@@ -90,7 +90,7 @@
                         <a class="nav-link" href="#qh">Sobre Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Novedades</a>
+                        <a class="nav-link" href="#Novedades">Novedades</a>
                     </li>
                     
                     <li class="nav-item dropdown">
@@ -125,7 +125,7 @@
           <!-- encondido para pantallas menores a large -->
     </header>
     <main>
-       
+       <!-- bloque info inicial -->
         <section>
             <div id="imagenppal" class="presentini">
                 <img src="imagenes/ciberseguridad1.jpg" class="imgciber vw-100 vh-75" alt="imgciber">
@@ -139,7 +139,7 @@
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/lskwU3kw29o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </section>
-        
+        <!-- Bloque ¿quienes somos? -->
         <section>
             <div id="qh" class="contenidos">
                 <h2 class="clasificación">¿Quienes somos?</h2>
@@ -155,7 +155,57 @@
                 <h2 class="clasificación">¿Porque es importante?</h2>
                 <p class="definiciones">La ciberseguridad permite proteger la información, privacidad y los sistemas informáticos de las empresas y de los usuarios en general, lo que les posibilita operar con tranquilidad y confianza en un entorno digital cada vez más conectado.Para que esta pueda cumplir su objetivo debe llevarse a cabo un trabajo en conjunto partiendo desde los usuarios los cuales deben comprender y cumplir los principios basicos de seguridad de datos; las organizaciones deben tener protocolos y buen manejo de la informacion y en si la tecnologia engranara a ambos para que puedan llevarse a cabo estos procesos.</p>
             </div>
-        </section>    
+        </section>
+        <!-- Bloque novedades -->
+        <section>
+            <div id="Novedades" class="contenidos">
+                <h2 class="clasificación">Novedades</h2>
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                            <div class="card h-100" style="width: 18rem;">
+                                <img src="imagenes/segnovedad1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">CERT.ar</h5>
+                                <p class="card-text">Somos el Equipo de Respuesta ante Emergencias Informáticas nacional CERT.ar. Trabajamos en la gestión técnico-administrativa de los incidentes de seguridad informática en el Sector Público Nacional.</p>
+                                <a href="https://www.argentina.gob.ar/jefatura/innovacion-publica/ssetic/direccion-nacional-ciberseguridad/cert-ar" class="btn btn-primary">Ir a la Página</a>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="carousel-item">
+                            <div class="card h-100" style="width: 18rem;">
+                                <img src="imagenes/segley.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">Delitos informáticos</h5>
+                                <p class="card-text">Los delitos informáticos ahora forman parte del Código Penal.
+                                    Ley 26.388</p>
+                                <a href=https://www.argentina.gob.ar/justicia/derechofacil/leysimple/delitos-informaticos class="btn btn-primary">Ir a la Página</a>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card h-100" style="width: 18rem;">
+                            <img src="imagenes/segley2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Normativa - Ciberseguridad</h5>
+                            <p class="card-text">Aquí podés encontrar la normativa relacionada a la ciberseguridad en la Argentina.</p>
+                            <a href="https://www.argentina.gob.ar/jefatura/innovacion-publica/direccion-nacional-ciberseguridad/normativa" class="btn btn-primary">Ir a la Página</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section> 
+        <!-- Bloque contacto    -->
         <section> 
             <div id="contacto">
                 <form class="form">
