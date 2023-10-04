@@ -270,6 +270,8 @@ input:focus{
 }
 
 .dire{
+    margin: 5px;
+    padding: 2px;
     list-style: none;
     font-weight: bold;
     font-size: 20px;
