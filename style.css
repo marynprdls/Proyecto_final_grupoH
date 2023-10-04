@@ -300,20 +300,6 @@ input:focus{
     background-position: center;
 
 }
-.tituloacce{
-    margin: 10px;
-    margin-top: 50px;
-    padding: 5px;
-}
-.invitacce{
-    margin: 5px;
-    padding: 3px;
-    color: #0404da;
-    font-size: 20px;
-    font-style: italic;
-    font-weight: bold;
-    text-align: center;
-}
 .formingusu{
     width:340px;
     height:480px;
@@ -363,6 +349,14 @@ input:focus{
 }
 /*fin formato páginas*/
 
+
+
+
+
+
+
+
+
 /*Formato para dispositivos*/
 
 /* Medium devices (tablets, 768px and up)*/
@@ -389,14 +383,9 @@ input:focus{
         display: flex;
         flex-direction: row;
     }
-    .tituloacce{
-        margin-top: 50px;
-    }
-    .invitacce{
-        font-size: 30px;
-    }
+   
     .formingusu{
-        margin:calc(50vh - 300px) auto;
+        margin:calc(50vh - 200px) auto;
     }
     .msjboton{
         margin:40px 10px 20px 70px;
@@ -426,12 +415,7 @@ input:focus{
         display: flex;
         flex-direction: row;
     }
-    .tituloacce{
-        margin-top: 50px;
-    }
-    .invitacce{
-        font-size: 40px;
-    }
+    
     .formingusu{
         margin:calc(50vh - 320px) auto;
     }
@@ -463,12 +447,7 @@ input:focus{
         display: flex;
         flex-direction: row;
     }
-    .tituloacce{
-        margin-top: 50px;
-    }
-    .invitacce{
-        font-size: 50px;
-    }
+    
     .formingusu{
         margin:calc(50vh - 300px) auto;
     }
@@ -500,12 +479,7 @@ input:focus{
         display: flex;
         flex-direction: row;
     }
-    .tituloacce{
-        margin-top: 50px;
-    }
-    .invitacce{
-        font-size: 50px;
-    }
+    
     .formingusu{
         margin:calc(50vh - 300px) auto;
     }
