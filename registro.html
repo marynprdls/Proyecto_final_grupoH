@@ -134,40 +134,40 @@
             <fieldset>
                 <legend>Datos Personales</legend>
         <div class="datos">
-            <label for="" >Nombres(s):</label>
-            <input type="text">
+            <label for="" >Nombres:</label>
+            <input type="text" id="Nombres" name="Nombres">
         </div>
         <div class="datos">
-            <label for="">Apellidos(s):</label>
-            <input type="text">
+            <label for="">Apellidos:</label>
+            <input type="text" id="Apellidos" name="Apellidos">
         </div>
         <div class="datos">
             <label for="">Fecha de nacimiento:</label>
-            <input type="date" name="fechadenacimiento">
+            <input type="date" id="fechadenacimiento" name="fechadenacimiento">
         </div>
         <div class="datos">
             <label for=""> Sexo:</label>
-            <input type="radio" name="sexo" value="masculino"> Masculino
-            <input type="radio" name="sexo" value="femenino"> Femenino
-            <input type="radio" name="sexo" value="otro"> Otro
+            <input type="radio" id="sexo" name="sexo" value="masculino"> Masculino
+            <input type="radio" id="sexo" name="sexo" value="femenino"> Femenino
+            <input type="radio"  id="sexo" name="sexo" value="otro"> Otro
         </div>
         <div class="datos">
             <label for="">Nacionalidad:</label>
-            <input type="text">
+            <input type="text" id="nacionalidad" name="nacionalidad">
         </div>
         <div class="datos">
             <label for="">Tipo de documento</label>
-            <input type="radio" name="documento" value="DNI"> DNI
-            <input type="radio" name="documento" value="pasaporte"> Pasaporte
-            <input type="radio" name="documento" value="otro"> Otro
+            <input type="radio" id="documento" name="documento" value="DNI"> DNI
+            <input type="radio" id="documento" name="documento" value="pasaporte"> Pasaporte
+            <input type="radio" id="documento" name="documento" value="otro"> Otro
         </div>
         <div class="datos">
             <label for="">Numero de documento</label>
-            <input type="number">
+            <input type="number" id="numero" name="numero">
         </div>
         <div class="datos">
             <label for="">Pais de residencia</label>
-            <input type="text">
+            <input type="text" id="pais" name="pais">
         </div>
         <div class="datos">
         <label for="">Nivel educativo alcanzado</label>
@@ -183,7 +183,7 @@
             <legend>Datos de contacto</legend>
             <div class="datos">
                 <label for="">Celular</label>
-                <input type="tel">
+                <input type="tel" id="celular" name="celular">
             </div>
             <div class="datos">
                 <label for="">Direccion</label>
@@ -194,15 +194,15 @@
             <legend>Creacion de usuario</legend>
             <div>
                 <label for="">Email</label>
-                <input type="email">
+                <input type="email" id="email" name="email">
             </div>
             <div>
                 <label for="">Nombre de usuario</label>
-                <input type="text">
+                <input type="text" id="usuario" name="usuario">
             </div>
             <div>
                 <label for="">Contraseña</label>
-                <input type="password" size="8">
+                <input type="password" size="8" id="password" name="password">
             </div>
         </fieldset>
         <input type="submit" value="Enviar">
@@ -251,7 +251,7 @@
                 <img src="imagenes/icons8-collapse-arrow-64.png" alt="Imagen" class="imagensticky">
             </a>
         </button>
-        <script src="registro.js"></script>
-    </footer>
+   </footer>
+   <script src="registro.js"></script>
 </body>
 </html>
