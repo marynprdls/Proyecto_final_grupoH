@@ -2,7 +2,7 @@ let formulario = document.getElementById('formularioaulavirtual1');
 
 formulario.addEventListener('submit', function(event) {
   event.preventDefault();
-});
+
 let datosUsuario = {};
 let nombres = document.getElementById('Nombres').value;
 let apellidos = document.getElementById('Apellidos').value;
@@ -37,3 +37,4 @@ localStorage.setItem('datosUsuario', JSON.stringify(datosUsuario));
 let datosGuardados = localStorage.getItem('datosUsuario');
 datosUsuario = JSON.parse(datosGuardados);
 console.log('Datos guardados en el localStorage:', datosGuardados);
+});
