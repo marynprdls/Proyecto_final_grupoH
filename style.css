@@ -79,12 +79,21 @@ a:hover{
     color: #162174;
     font-weight: bolder;
 }
-
+/*carrucel de imágenes*/
+.carronins{
+    height:300px;
+    width:350px;
+    border-image: round;
+    border-radius: 5px;
+    border-color: #244af0;
+    
+}
 #carouselIndicators{
     margin: 1px;
-    padding: 2px;
+    padding: 5px;
     height:fit-content;
     background-color: #0404da;
+    
 }
 
 #advertencia{
@@ -270,6 +279,8 @@ input:focus{
 }
 
 .dire{
+    margin: 5px;
+    padding: 2px;
     list-style: none;
     font-weight: bold;
     font-size: 20px;
@@ -347,6 +358,36 @@ input:focus{
     font-style: italic;
 
 }
+
+
+
+/* código de página de academia */
+.bloquecursos{
+    display:grid;
+    justify-content: center;
+}
+.row{
+    grid-row-gap:15px;
+}
+
+.pagnavegacion{
+    margin: 5px;
+    margin-top: 15px;
+    padding: 5px;
+}
+#tarjetacurso{
+    border-color: #020c1b;
+    color: #020c1b;
+}
+   
+#tarjetacurso:hover{
+    border-color: #39acee;
+    border-width: 3px;
+    color: #1a2dc0;
+    font-weight: bold;
+    
+}
+
 /*fin formato páginas*/
 
 
@@ -390,6 +431,15 @@ input:focus{
     .msjboton{
         margin:40px 10px 20px 70px;
     }
+       /*carrucel de imágenes*/
+       .carronins{
+        height:300px;
+        width:400px;
+        border-image: round;
+        border-radius: 5px;
+        border-color: #244af0;
+        
+    }
 }
 
 /* Large devices (desktops, 992px and up)*/
@@ -422,6 +472,15 @@ input:focus{
     .msjboton{
         margin:40px 10px 20px 70px;
     }
+    /*carrucel de imágenes*/
+.carronins{
+    height:400px;
+    width:500px;
+    border-image: round;
+    border-radius: 5px;
+    border-color: #244af0;
+    
+}
 }
 
 /* X-Large devices (large desktops, 1200px and up)*/
@@ -454,6 +513,15 @@ input:focus{
     .msjboton{
         margin:40px 10px 20px 70px;
     }
+        /*carrucel de imágenes*/
+    .carronins{
+        height:500px;
+        width:700px;
+        border-image: round;
+        border-radius: 5px;
+        border-color: #244af0;
+        
+    }
  }
 
 /* XX-Large devices (larger desktops, 1400px and up)*/
@@ -485,5 +553,14 @@ input:focus{
     }
     .msjboton{
         margin:40px 10px 20px 70px;
+    }
+       /*carrucel de imágenes*/
+       .carronins{
+        height:700px;
+        width:850px;
+        border-image: round;
+        border-radius: 5px;
+        border-color: #244af0;
+        
     }
 }
