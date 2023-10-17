@@ -72,7 +72,7 @@ for (let i=0; i<cursos.length; i++){
 }
 
 // comportamiento de botones luego de cargado el html
-
+//array con rutas de cada 
 window.onload=function(){
     let botones=document.querySelectorAll("button");
     for(let j=0;j<botones.length;i++){
