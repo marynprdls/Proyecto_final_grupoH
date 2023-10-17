@@ -1,11 +1,44 @@
-let formulario = document.querySelector('#padreform')
-let formulario1 = document.getElementById (formularioaulavirtual1)
-console.log(formulario, formulario1); 
-sessionStorage.setItem('.datos', datosdeusuario),
-sessionStorage.getItem('.datos', datosdeusuario)
-console.log();
-formulario1.addEventListener('submit')
-for (let formulario1 = 0; formulario1 < array.length; formulario1++) {
-    const element = array[formulario1];
-    
-}
+let formulario = document.getElementById('formularioaulavirtual1');
+
+formulario.addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  function datosUsuario() {
+    let datosUsuario = {};
+    let nombres = document.getElementById('nombres').value;
+    let apellidos = document.getElementById('apellidos').value;
+    let fechaNacimiento = document.getElementById('fechaNacimiento').value;
+    let sexo = document.querySelector('input[name="sexo"]:checked').value;
+    let nacionalidad = document.getElementById('nacionalidad').value;
+    let tipoDocumento = document.querySelector('input[name="documento"]:checked').value;
+    let numeroDocumento = document.getElementById('numero').value;
+    let paisResidencia = document.getElementById('pais').value;
+    let nivelEducativo = document.querySelector('select[name="Nivel educativo"]').value;
+    let celular = document.getElementById('celular').value;
+    let direccion = document.querySelector('#direccion').value;
+    let email = document.getElementById('email').value;
+    let nombreUsuario = document.getElementById('usuario').value;
+    let password = document.getElementById('password').value;
+
+    datosUsuario.nombres = nombres;
+    datosUsuario.apellidos = apellidos;
+    datosUsuario.fechaNacimiento = fechaNacimiento;
+    datosUsuario.sexo = sexo;
+    datosUsuario.nacionalidad = nacionalidad;
+    datosUsuario.tipoDocumento = tipoDocumento;
+    datosUsuario.numeroDocumento = numeroDocumento;
+    datosUsuario.paisResidencia = paisResidencia;
+    datosUsuario.nivelEducativo = nivelEducativo;
+    datosUsuario.celular = celular;
+    datosUsuario.direccion = direccion;
+    datosUsuario.email = email;
+    datosUsuario.nombreUsuario = nombreUsuario;
+    datosUsuario.password = password;
+
+    localStorage.setItem('datosUsuario', JSON.stringify(datosUsuario));
+    let datosGuardados = localStorage.getItem('datosUsuario');
+    console.log('Datos guardados en el localStorage:', datosGuardados);
+  }
+
+  datosUsuario();
+});
