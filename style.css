@@ -375,17 +375,24 @@ input:focus{
     margin-top: 15px;
     padding: 5px;
 }
-#tarjetacurso{
+.tarjetacurso{
     border-color: #020c1b;
     color: #020c1b;
 }
    
-#tarjetacurso:hover{
+.tarjetacurso:hover{
     border-color: #39acee;
     border-width: 3px;
     color: #1a2dc0;
     font-weight: bold;
     
+}
+
+/* código de pagina info curso */
+.cuerpoinfocurso{
+    background-image: url("imagenes/cabeceracursosdata.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /*fin formato páginas*/
@@ -481,6 +488,7 @@ input:focus{
     border-color: #244af0;
     
 }
+
 }
 
 /* X-Large devices (large desktops, 1200px and up)*/
@@ -522,6 +530,8 @@ input:focus{
         border-color: #244af0;
         
     }
+    
+    
  }
 
 /* XX-Large devices (larger desktops, 1400px and up)*/
@@ -563,4 +573,5 @@ input:focus{
         border-color: #244af0;
         
     }
+    
 }
