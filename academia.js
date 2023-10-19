@@ -114,7 +114,9 @@ window.onload=function(){
             const modalTitle = exampleModal.querySelector('.modal-title')
             const modalBodyp = exampleModal.querySelector('.modal-body p')
             const modalFooterp = exampleModal.querySelector('.modal-footer p')
-
+                //
+            const modalBotonCarro= exampleModal.querySelector('.modal-footer button')
+                //
             modalTitle.textContent = `Curso: ${recipient}`
             for (let i=0; i<cursos.length; i++){
                 if(cursos[i].curso===recipient){
@@ -124,16 +126,22 @@ window.onload=function(){
             }
             modalBodyp.textContent = datatemario
             modalFooterp.textContent = datacosto
+            //
+            modalBotonCarro.setAttribute("data-bs-whatever", "recipient");
+            //
             })
         }
            
         
         
         //Botón de compra en ventana emergente relacion con carrito 
+        
         let clickbotoncarro = document.getElementById("botoncarro")
+        clickbotoncarro.setAttribute("data-bs-toggle","offcanvas");
+        clickbotoncarro.setAttribute("data-bs-target","#offcanvasRight");
+       
         clickbotoncarro.onclick = incrementClick
         
-
         var contadora = 0
 
         function incrementClick () {
@@ -145,10 +153,47 @@ window.onload=function(){
             document.querySelector('.cantcompra').innerHTML = val
         }
 
+
+
         //Actualización de estado botón emergente
         exampleModal.addEventListener('hidden.bs.modal', event => {
             clickbotoncarro.innerText='Agregar al Carrito'
         })
+
+        // carga al carrito
+       
+        const offcanvasRight = document.getElementById('offcanvasRight')
+        if (offcanvasRight) {
+            offcanvasRight.addEventListener('show.bs.offcanvas', event => {
+            // Boton que dispara la ventana emergente
+            const button = event.relatedTarget
+            // Extract info from data-bs-* attributes
+            const recip = button.getAttribute('data-bs-whatever')
+
+            for (let i=0; i<cursos.length; i++){
+                if(cursos[i].curso===recip){
+                    localStorage.setItem("NombreCurso",cursos[i].curso)
+                    localStorage.setItem("Valor",cursos[i].costo)
+                    
+                    let article=document.createElement("article")
+                    
+                    let namecourse=document.createElement("h2")
+                    
+                    let pcost=document.createElement("p")
+                    
+                    namecourse.innerText=localStorage.getItem("Valor")
+
+                    pcost.innerText=localStorage.getItem("NombreCurso")
+
+                    article.appendChild(namecourse)
+                    article.appendChild(pcost)
+                    document.getElementById('carroartic').appendChild(article)
+                    
+                }
+            }
+        })
+    }
+        
         
 }
 window.onscroll = function() {scrollFunction()};
