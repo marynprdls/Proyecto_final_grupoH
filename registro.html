@@ -28,10 +28,10 @@
         <div id="imagenppal" class="presentini">
             <img src="imagenes/ciberseguridad1.jpg" class="imgciber vw-100 vh-75" alt="imgciber">
         </div>
-        <p>Sean todos bienvenidos a la seccion de registro de nuestras Aula Virtual, deberas completar los datos solicitados para asi poder adentrarte al curso que elegiste y comenzar a aprender sobre ciberseguridad.</p>
+        <p class="contenidos">Sean todos bienvenidos a la seccion de registro de nuestras Aula Virtual, deberas completar los datos solicitados para asi poder adentrarte al curso que elegiste y comenzar a aprender sobre ciberseguridad.</p>
         
         <form action="" id="formularioaulavirtual1" >
-            <fieldset>
+            <fieldset class="datosusu">
                 <legend>Datos Personales</legend>
                 <div class="datos">
                     <label for="" >Nombres:</label>
@@ -46,7 +46,9 @@
                     <input type="date" id="fechaNacimiento" name="fechaNacimiento">
                 </div>
                 <div class="datos">
+                    <div>
                     <label for=""> Sexo:</label>
+                    </div>
                     <input type="radio" id="sexoMasculino" name="sexo" value="masculino"> Masculino
                     <input type="radio" id="sexoFemenino" name="sexo" value="femenino"> Femenino
                     <input type="radio"  id="sexoOtro" name="sexo" value="otro"> Otro
@@ -57,6 +59,7 @@
                 </div>
                 <div class="datos">
                     <label for="">Tipo de documento</label>
+                    <br>
                     <input type="radio" id="documentoDni" name="documento" value="DNI"> DNI
                     <input type="radio" id="documentoPasaporte" name="documento" value="pasaporte"> Pasaporte
                     <input type="radio" id="documentoOtro" name="documento" value="otro"> Otro
@@ -70,8 +73,8 @@
                     <input type="text" id="pais" name="pais">
                 </div>
                 <div class="datos">
-                <label for="">Nivel educativo alcanzado</label>
-                <select name="Nivel educativo" id="">
+                <label for="" class="educa">Nivel educativo alcanzado</label>
+                <select name="Nivel educativo" id="" class="opcioneseduc">
                     <option value="primeria">Primaria</option>
                     <option value="secundario">Secundario</option>
                     <option value="superior">Superior de grado</option>
@@ -79,7 +82,7 @@
                 </select>
             </div>
             </fieldset>
-            <fieldset>
+            <fieldset class="datosusu">
                 <legend>Datos de contacto</legend>
                 <div class="datos">
                     <label for="">Celular</label>
@@ -90,7 +93,7 @@
                     <textarea name="" id="direccion" cols="20" rows="5"></textarea>
                 </div>
             </fieldset>
-            <fieldset class="usuario">
+            <fieldset class="datosusu">
                 <legend>Creacion de usuario</legend>
                 <div>
                     <label for="">Email</label>
