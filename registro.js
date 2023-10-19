@@ -42,3 +42,15 @@ formulario.addEventListener('submit', function(event) {
 
   datosUsuario();
 });
+// color a barra de navegacion con scroll
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    document.getElementById("navscroll").style.backgroundColor = "blue";
+    document.getElementById("navscroll").style.opacity = "80%";
+  } else {
+    document.getElementById("navscroll").style.backgroundColor = "transparent";
+    document.getElementById("navscroll").style.opacity = "100%";
+  }
+}
