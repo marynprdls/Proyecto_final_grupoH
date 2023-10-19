@@ -394,6 +394,9 @@ input:focus{
     background-repeat: no-repeat;
     background-size: cover;
 }
+/* formato formulario de registro mobile first
+
+
 
 /*fin formato páginas*/
 
@@ -447,6 +450,7 @@ input:focus{
         border-color: #244af0;
         
     }
+    
 }
 
 /* Large devices (desktops, 992px and up)*/

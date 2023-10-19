@@ -16,73 +16,67 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <!-- formato para pantallas pequeñas, icono menu desplegable vertical -->
-        <div class="d-lg-none">
-            <nav class="navbar fixed-top">
-                <div class="container-fluid">  
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                    
-                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                        
-                        <div class="offcanvas-header">
-                            <img src="imagenes/logo.jpg" alt="Logo" width="50" height="50" class="d-inline align-text-top rounded-circle">
-                            <h5 class="offcanvas-title d-inline align-text-top text-center titulopag" id="offcanvasNavbarLabel">CiberSeguridad para Tod#s</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                        </div>
-                        
-                        <div class="offcanvas-body">
-                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="ingreso.html">Ingresar</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="index.html">Página Principal</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="index.html#contacto">Contacto</a>
-                                </li>
-                            </ul>
-                            <form class="d-flex mt-3" role="search">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit">Search</button>
-                            </form>
-                        </div>
-                    </div>
-                </div> 
-            </nav>
-        </div>
-        
-          <!-- encondido para pantallas menores a large -->    
-        <div class="d-none d-lg-block">      
-            <nav class="nav fixed-top bg-transparent fw-bolder">
-                
-                <div class="flex-fill" >
+    <header>  
+        <nav id="navscroll" class="navbar fixed-top" style="height: 70px;">
+            <div class="flex-fill" >
+                <div class="position-absolute top-0 start-0">
+                    <span class="navbar-text text-white fs-2">Academia CiberSeguridad.Org</span>
+                </div>
+                <div class="position-absolute top-0 start-50">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="index.html">Página Principal</a>
+                        </li>
+                        <li>
+                            <button class="btn btn-outline-primary" style="color: blanchedalmond; border-color: white;" type="submit"><a class="nav-link text-white" href="ingreso.html"><img src="imagenes/icons8-avatar-24.png" alt="">Mi Cuenta</a></button>
 
-                    <div class="position-absolute top-0 start-0">
-                        <span class="navbar-text text-white fs-2">Academia CiberSeguridad.Org</span>
-                    </div>
-                
+                            <button class="btn btn-outline-primary" style="color: blanchedalmond; border-color: white;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><span class="cantcompra position-absolute text-bg-secondary badge rounded-pill bg-danger"></span><img src="imagenes/icons8-shopaholic-48.png" alt="">Carrito</button>
+                        </li>  
+                    </ul> 
+                </div>
+            </div>                  
+        </nav>    
+        <!-- formato para pantallas pequeñas, icono menu desplegable vertical -->      
+        <!-- <div class="d-lg-none">
+            <div>
+                <nav id="navscrollcel" class="navbar fixed-top" style="height: 80px;">
                     <div class="position-absolute top-0 end-0">
                         <ul class="nav">
                             <li class="nav-item">
-                                <a class="nav-link active text-white" aria-current="page" href="ingreso.html">Ingresar</a>
+                                <a class="nav-link text-white" href="index.html">Página Principal</a>
                             </li>
+                            <li>
+                                <button class="btn btn-outline-primary" style="color: blanchedalmond; border-color: white;" type="submit"><a class="nav-link text-white" href="ingreso.html"><img src="imagenes/icons8-avatar-24.png" alt="">Mi Cuenta</a></button>
+                                <button class="btn btn-outline-primary" style="color: blanchedalmond; border-color: white;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><span class="cantcompra position-absolute text-bg-secondary badge rounded-pill bg-danger"></span><img src="imagenes/icons8-shopaholic-24.png" alt="">Carrito</button>
+                            </li>
+                        </ul> 
+                    </div>
+                </nav>    
+            </div>
+        </div>
+         -->
+          <!-- encondido para pantallas menores a large -->    
+        <!-- <div class="d-none d-lg-block">       -->
+            <!-- <nav id="navscroll" class="navbar fixed-top" style="height: 70px;">
+                <div class="flex-fill" >
+                    <div class="position-absolute top-0 start-0">
+                        <span class="navbar-text text-white fs-2">Academia CiberSeguridad.Org</span>
+                    </div>
+                    <div class="position-absolute top-0 start-50">
+                        <ul class="nav">
                             <li class="nav-item">
                                 <a class="nav-link text-white" href="index.html">Página Principal</a>
                             </li>
-                                
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="index.html#contacto">Contacto</a>
-                            </li>
-                            
+                            <li>
+                                <button class="btn btn-outline-primary" style="color: blanchedalmond; border-color: white;" type="submit"><a class="nav-link text-white" href="ingreso.html"><img src="imagenes/icons8-avatar-24.png" alt="">Mi Cuenta</a></button>
+
+                                <button class="btn btn-outline-primary" style="color: blanchedalmond; border-color: white;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><span class="cantcompra position-absolute text-bg-secondary badge rounded-pill bg-danger"></span><img src="imagenes/icons8-shopaholic-48.png" alt="">Carrito</button>
+                            </li>  
                         </ul> 
                     </div>
                 </div>                  
-            </nav>                 
-        </div>
+            </nav>                  -->
+        <!-- </div> -->
           <!-- encondido para pantallas menores a large -->
     </header>
     <main>
@@ -96,66 +90,7 @@
         <!-- Bloque cursos -->
         <div class="container text-center bloquecursos">
                 <div id="bloquecursofila" class="row row-cols-1 row-cols-md-3 row-cols-lg-4 ">
-                    <!-- <div class="col ">
-                        <div class="card text-center tarjetacurso" style="max-width: 18rem;">
-                            <img src="imagenes/contenido-computadora-portatil.jpg" class="card-img-top " alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title" style="font-weight: bolder;"> Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <a href="#" class="btn btn-primary">Ir al curso</a>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- <div class="col">
-                        <div id="tarjetacurso" class="card text-center" style="max-width: 18rem;">
-                            <img src="imagenes/ninos-usando-dispositivos-electronicos.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title" style="font-weight: bolder;">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <a href="#" class="btn btn-primary">Ir al curso</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div id="tarjetacurso" class="card text-center" style="max-width: 18rem;">
-                            <img src="imagenes/amigos-usando-laptop-moviles.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title" style="font-weight: bolder;">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <a href="#" class="btn btn-primary">Ir al curso</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col ">
-                        <div id="tarjetacurso" class="card text-center" style="max-width: 18rem;">
-                            <img src="imagenes/interfaz-firewall-proteccion-seguridad-cibernetica.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title" style="font-weight: bolder;">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <a href="#" class="btn btn-primary">Ir al curso</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div id="tarjetacurso" class="card text-center" style="max-width: 18rem;">
-                            <img src="imagenes/personas-mayores-escuela-clase-computadora-portatil.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title" style="font-weight: bolder;">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <a href="#" class="btn btn-primary">Ir al curso</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div id="tarjetacurso" class="card text-center" style="max-width: 18rem;">
-                            <img src="imagenes/experiencia-programacion.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title" style="font-weight: bolder;">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <a href="#" class="btn btn-primary">Ir al curso</a>
-                            </div>
-                        </div>
-                    </div> -->
+                    
                 </div>
         </div>
         
@@ -174,7 +109,37 @@
                 </ul>
             </nav>
         </div>
-        
+        <!-- ventanas emergente -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Curso:</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h2 class="fs-5">Temario del curso:</h2>
+                        <hr>
+                        <p></p>
+                    </div>
+                    <div class="modal-footer">
+                        <p></p>
+                        <button id="botoncarro" type="button" class="btn btn-primary">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- carrito -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              ...
+            </div>
+          </div>
           
     </main>
     <footer class="piedepag conteiner text-center">
