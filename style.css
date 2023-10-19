@@ -388,13 +388,23 @@ input:focus{
     
 }
 
-/* código de pagina info curso */
-.cuerpoinfocurso{
-    background-image: url("imagenes/cabeceracursosdata.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+/* código de pagina academia */
+
+#navscroll{
+    height: 100px;
+    margin: 5px;
+    padding: 5px;
 }
-/* formato formulario de registro mobile first
+.tituloacademy{
+    position: absolute; 
+    top: 0%;
+    font-size: 15px; 
+    font-weight: bolder;
+}
+.iconosnav{
+    position: absolute;
+    bottom:0;
+} 
 
 
 
@@ -481,6 +491,10 @@ input:focus{
 
 /*fin formato páginas*/
 
+
+
+
+
 /*Formato para dispositivos*/
 
 /* Medium devices (tablets, 768px and up)*/
@@ -526,7 +540,26 @@ input:focus{
     #formularioaulavirtual1 {
         width: 600px;
         margin: 0 auto;
-        height:auto;
+        height:auto;}
+    /* código de pagina academia */
+
+    #navscroll{
+        height: 100px;
+        margin: 10px;
+        padding: 5px;
+    }
+    .tituloacademy{
+        position: absolute; 
+        top: 0%;
+        font-size: 30px; 
+        font-weight: bolder;
+        
+    }
+    .iconosnav{
+        position: absolute;
+        top:50%;
+    
+    } 
 }
 
 /* Large devices (desktops, 992px and up)*/
@@ -560,19 +593,40 @@ input:focus{
         margin:40px 10px 20px 70px;
     }
     /*carrucel de imágenes*/
-.carronins{
-    height:400px;
-    width:500px;
-    border-image: round;
-    border-radius: 5px;
-    border-color: #244af0;
+    .carronins{
+        height:400px;
+        width:500px;
+        border-image: round;
+        border-radius: 5px;
+        border-color: #244af0;
+    }
+    #formularioaulavirtual1 {
+        width: 1000px;
+        margin: 0 auto;
+        height:auto;
+    }
+    /* pagina academia*/
+    #navscroll{
+        height: 60px;
+        margin: 10px;
+        padding: 5px;
+    }
+      
+    .tituloacademy{
+        position: absolute;
+        color: white;
+        size: 30px;
+        left:0;
+        top:0;
+        
+    }
+    .iconosnav{
+        position: absolute;
+        right: 0;
+        top:0;
+    }
+   
 }
-#formularioaulavirtual1 {
-    width: 1000px;
-    margin: 0 auto;
-    height:auto;
-}
-
 /* X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) { 
     .imgciber{
@@ -610,12 +664,33 @@ input:focus{
         border-image: round;
         border-radius: 5px;
         border-color: #244af0;
-        
     }
     #formularioaulavirtual1 {
         width: 1300px;
         margin: 0 auto;
         height:auto;
+    }
+
+    
+    /* pagina academia*/
+    #navscroll{
+        height: 60px;
+        margin: 10px;
+        padding: 5px;
+    }
+      
+    .tituloacademy{
+        position: absolute;
+        color: white;
+        size: 35px;
+        left:0;
+        top:0;
+    }
+    .iconosnav{
+        position: absolute;
+        right: 0;
+        top:0;
+    }
     
  }
 
@@ -656,7 +731,26 @@ input:focus{
         border-image: round;
         border-radius: 5px;
         border-color: #244af0;
-        
+    }
+    
+    /* pagina academia*/
+    #navscroll{
+        height: 60px;
+        margin: 10px;
+        padding: 5px;
+    }
+      
+    .tituloacademy{
+        position: absolute;
+        color: white;
+        size: 40px;
+        left:0;
+        top:0;
+    }
+    .iconosnav{
+        position: absolute;
+        right: 0;
+        top:0;
     }
     
 }

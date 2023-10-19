@@ -157,12 +157,8 @@ function scrollFunction() {
   if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
     document.getElementById("navscroll").style.backgroundColor = "blue";
     document.getElementById("navscroll").style.opacity = "80%";
-    document.getElementById("navscrollcel").style.backgroundColor = "blue";
-    document.getElementById("navscrollcel").style.opacity = "80%";
   } else {
     document.getElementById("navscroll").style.backgroundColor = "transparent";
     document.getElementById("navscroll").style.opacity = "100%";
-    document.getElementById("navscrollcel").style.backgroundColor = "transparent";
-    document.getElementById("navscrollcel").style.opacity = "100%";
   }
 }
