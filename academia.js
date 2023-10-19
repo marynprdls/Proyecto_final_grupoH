@@ -196,6 +196,7 @@ window.onload=function(){
         
         
 }
+// color a barra de navegacion con scroll
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
