@@ -17,26 +17,63 @@
 </head>
 <body>
     <header>
-        <div >
-            <nav id="navscroll" class="navbar fixed-top">
-            <div class="flex-fill" >
-                <div class="tituloacademy">
-                    <span class="navbar-text text-black">Registro Academia CiberSeguridad.Org</span>
-                </div>
-                <div class="iconosnav">
+            <header>
+        <header>
+            <!-- formato para pantallas pequeñas, icono menu desplegable vertical -->
+            <div class="d-lg-none">
+                <nav class="navbar bg-transparent fixed-top">
+                    <div class="container-fluid">  
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                            
+                            <div class="offcanvas-header">
+                                <img src="imagenes/logo.jpg" alt="Logo" width="50" height="50" class="d-inline align-text-top rounded-circle">
+                                <h5 class="offcanvas-title d-inline align-text-top text-center titulopag" id="offcanvasNavbarLabel">CiberSeguridad para Tod#s</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                    <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Pagina Principal</a>
+                                    </li>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="Academia.html">Academia</a>
+                                    </li>    
+                                </ul>
+                                <form class="d-flex mt-3" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div> 
+                </nav>
+            </div>
+            
+              <!-- encondido para pantallas menores a large -->    
+            <div class="d-none d-lg-block">           
+                <nav class="nav fixed-top bg-info-subtle opacity-80 justify-content-center">
                     <ul class="nav">
                         <li class="nav-item">
-                            <button class="btn btn-outline-primary" style="color: rgb(17, 91, 187); border-color: rgb(2, 7, 14); border-width: 3px;" type="button"><a class=" text-black" href="index.html">Página Principal</a></button>
+                            <a class="nav-link active" aria-current="page" href="index.html">Pagina Pricipal</a>
                         </li>
-                    </ul> 
-                </div>
-            </div>                  
-        </nav>      
-        </div>
-    </header>
-    <main>
-        <div id="imagenppal" class="presentini">
-            <img src="imagenes/ciberseguridad1.jpg" class="imgciber vw-100 vh-30" alt="imgciber" height="200">
+                        <li class="nav-item">
+                            <a class="nav-link" href="Academia.html">Academia</a>
+                        </li>
+                    </ul>                 
+                </nav>
+                                      
+            </div>
+              <!-- encondido para pantallas menores a large -->
+        </header>
+        <main>
+            <div id="imagenppal" class="presentini">
+                <img src="imagenes/ciberseguridad1.jpg" class="imgciber vw-100 vh-75" alt="imgciber">
         </div>
         <p class="contenidos">Sean todos bienvenidos a la seccion de registro de nuestras Aula Virtual, deberas completar los datos solicitados para asi poder adentrarte al curso que elegiste y comenzar a aprender sobre ciberseguridad.</p>
         
